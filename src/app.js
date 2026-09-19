@@ -27,6 +27,29 @@ app.get("/admin/getAllData", (req, res) => {
 app.get("/admin/deleteUser", (req, res) => {
     res.send("Deleted a user");
 });
+app.get("/getUserData", (req, res, next) => {
+
+    try {
+
+        throw new Error("Something went wrong");
+
+        res.send("User Data Sent");
+
+    } catch (err) {
+
+        next(err);
+
+    }
+
+});
+
+app.use((err, req, res, next) => {
+
+    console.log(err);
+
+    res.status(500).send("Something went wrong");
+
+});
 
 app.listen(7777, () => {
     console.log("server is successfully listening on port 7777");

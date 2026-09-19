@@ -32,3 +32,4 @@ reading the query params in the routes
 -difference app.use and app.all
 -write a dummy auth and app.all
 -writea dummy auth middleware for all user routes ,exept /user/login 
+-error handling using app.use("/",(err,req,res,next)={});
