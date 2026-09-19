@@ -1,0 +1,34 @@
+-Create a repository 
+-Initializa the repository
+-node_modules,package.json,package-lock.json
+-Install express
+-Create a server 
+-Listen to port 7777
+-write request handlers for /test ,/hello
+-Install nodemon and updated script inside package.json 
+-What are dependencies
+-What is the use  of -"g" while npm install 
+-difference between  caret and tilde (^ vs ~)
+
+-initialize git 
+-.gitignore
+-create a remote repo on github 
+-push all code to remote origin 
+-play with routes and route extensions ex./hello,, / ,hello/2, /xyz
+- order of routes is matter alot 
+-install postman app and make a workspace/collectio>test api call
+-write logic to handle GET,POST,PATCH, DELETE,API calls and test them on postman
+-EXPLOre routing and use of ?,+,(),* in the routes
+-use of regex in routes/a/,/.*fly$/
+reading the query params in the routes
+-reading the dynamic routes
+
+-multiple route handlers play with the code
+-next()
+-next function and error along with res.send()
+-app.use("/route",rH,(rH2,rH3,),rH4,rH5);
+-what is middlewares
+-how express js basically handles requests behind the scenes 
+-difference app.use and app.all
+-write a dummy auth and app.all
+-writea dummy auth middleware for all user routes ,exept /user/login 
